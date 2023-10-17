@@ -1,6 +1,6 @@
 # denary2binary
-# This is Feynman optimized base10-to-binary converter (in python)
-# just input your base10 number and joyfully accept the binary output
+#This is Feynman optimized base10-to-binary converter (in python)
+#just input your base10 number and joyfully accept the binary output
 
 x = int(input())
 print(''.join([str(x//2**i%2) for i in range(x.bit_length()-1, -1, -1)]))
